@@ -18,6 +18,10 @@ class UsersController < ApplicationController
     user = User.find(params[:id])
     user.update(user_params)
   end
+  def destroy
+    user = User.find(params[:id])
+    user.delete
+  end
   private
 
   def user_params
