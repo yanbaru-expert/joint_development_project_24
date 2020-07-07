@@ -1,0 +1,8 @@
+<h1>更新フォーム</h1>
+<p>
+<%= form_for @message, url: message_path(@message.id) do |f|  %>
+<p>タイトル:<%= f.text_field :title %></p>
+<p>内容:<%= f.text_field :content %></p>
+<input type="submit" value="送信">
+</p>
+<% end %>
